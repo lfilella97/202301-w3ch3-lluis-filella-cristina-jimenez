@@ -1,6 +1,6 @@
-import { type Series } from "./types";
+import type SeriesStructure from "./types";
 
-const series: Series = [
+const series: SeriesStructure[] = [
   {
     id: 1,
     name: "The Sopranos",
