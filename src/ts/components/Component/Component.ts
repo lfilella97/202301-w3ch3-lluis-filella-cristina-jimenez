@@ -4,7 +4,7 @@ class Component implements ComponentStructure {
   element: Element;
   private readonly parentElement: Element;
 
-  constructor(parentElement: Element, tagName: string, className: "") {
+  constructor(parentElement: Element, tagName: string, className = "") {
     this.element = document.createElement(tagName);
     this.element.className = className;
     this.parentElement = parentElement;

@@ -9,4 +9,4 @@ export interface SeriesStructure {
   emmies: number;
 }
 
-export type Series = SeriesStructure[];
+export default SeriesStructure;
