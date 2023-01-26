@@ -9,7 +9,7 @@ class CardComponent extends Component {
   constructor(parentElement: Element, serieIndex: number) {
     super(parentElement, "li", "serie");
     this.series = series[serieIndex];
-    this.scores = "[]";
+    this.scores = "";
     this.render();
   }
 
