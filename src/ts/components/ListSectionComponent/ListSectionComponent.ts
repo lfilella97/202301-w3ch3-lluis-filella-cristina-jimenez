@@ -1,5 +1,6 @@
 import series from "../../series/series";
 import { type SeriesStructure } from "../../series/types";
+import CardComponent from "../CardComponent/CardComponent";
 import Component from "../Component/Component";
 
 class ListSectionComponent extends Component {
@@ -28,6 +29,7 @@ ${
         <ul class="series">
         </ul>
       </section>`;
+    this.showSeriesCard();
   }
 
   private getNumberOfWatchedSeries(): number {
@@ -36,6 +38,13 @@ ${
 
   private getNumberOfPendingSeries(): number {
     return this.series.filter(({ isWatched }) => !isWatched).length;
+  }
+
+  private showSeriesCard() {
+    series.forEach(
+      (tvShow, serieIndex) =>
+        new CardComponent(document.querySelector(".series")!, serieIndex)
+    );
   }
 }
 
