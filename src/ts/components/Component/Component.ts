@@ -2,9 +2,9 @@ import { type ComponentStructure } from "./types";
 
 class Component implements ComponentStructure {
   element: Element;
-  private readonly parentElement: Element;
+  parentElement: Element;
 
-  constructor(parentElement: Element, tagName: string, className = "") {
+  constructor(parentElement: Element, tagName = "div", className = "") {
     this.element = document.createElement(tagName);
     this.element.className = className;
     this.parentElement = parentElement;

@@ -1,5 +1,7 @@
-import ListSectionComponent from "./components/ListSectionComponent/ListSectionComponent";
+import MainPageComponent from "./components/MainPageComponent/MainPageComponent";
 
-const section = new ListSectionComponent(document.body, false);
+const app = document.querySelector(".container")!;
 
-section.render();
+const mainPage = new MainPageComponent(document.body);
+
+mainPage.render();
