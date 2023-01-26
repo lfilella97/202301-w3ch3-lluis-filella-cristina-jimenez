@@ -7,10 +7,11 @@ const mainPage = new MainPageComponent(document.body);
 
 mainPage.render();
 
-const pendingList = new ListSectionComponent(mainPage.element, true);
+const mainContainer = document.querySelector(".main-content")!;
+const pendingList = new ListSectionComponent(mainContainer, true);
 
 pendingList.render();
 
-const watchedList = new ListSectionComponent(mainPage.element, false);
+const watchedList = new ListSectionComponent(mainContainer, false);
 
 watchedList.render();

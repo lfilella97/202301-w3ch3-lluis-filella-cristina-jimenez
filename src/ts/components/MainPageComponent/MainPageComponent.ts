@@ -2,7 +2,7 @@ import Component from "../Component/Component";
 
 class MainPageComponent extends Component {
   constructor(parentElement: Element) {
-    super(parentElement, "container", "div");
+    super(parentElement, "div", "container");
   }
 
   public render() {
